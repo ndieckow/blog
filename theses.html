@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>ThesesThoughts on Life & AI</title>
 
-    <link rel="stylesheet" href="/theme/css/main.css">
-    <link rel="stylesheet" href="/theme/css/pygment_trac.css">
+    <link rel="stylesheet" href="https://ndieckow.github.io/blog/theme/css/main.css">
+    <link rel="stylesheet" href="https://ndieckow.github.io/blog/theme/css/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,11 +16,11 @@
     <div class="wrapper">
       <header>
         <div><img src="" class="grv-img"/></div>
-        <div class="title"><a href="/">Thoughts on Life & AI </a></div>
+        <div class="title"><a href="https://ndieckow.github.io/blog/">Thoughts on Life & AI </a></div>
         <div class="sub-title"></div>
 
 <p>
-  <div class="view"><a href="/archives.html">Archives</a></div>
+  <div class="view"><a href="https://ndieckow.github.io/blog/archives.html">Archives</a></div>
 </p>
 
 <!-- Social links -->
@@ -40,18 +40,18 @@
   So 26 November 2023
 </abbr> | 
   tags: 
-    <a href="/tag/studying.html">studying</a>, 
- -- (<a href="/theses.html" rel="bookmark">permalink</a>)
+    <a href="https://ndieckow.github.io/blog/tag/studying.html">studying</a>, 
+ -- (<a href="https://ndieckow.github.io/blog/theses.html" rel="bookmark">permalink</a>)
 </small>
 </p>      <p>Yesterday, I submitted my Master's thesis. I am so happy that this moment finally came! While it was a great learning experience, I can't say that I have enjoyed it throughout. Especially nearing the end, I just wanted to be done. On this page, I want to share both of my theses (Bachelor's and Master's) with anybody who is interested in them.</p>
 <h2>Bachelor's Thesis</h2>
 <p>My Bachelor's thesis is titled "Methods of Machine Learning and their Application to the Repair Limit Replacement Problem". It was mainly an introduction to reinforcement learning and covered concepts such as Markov Decision Processes, the Bellman equation, value iteration and Q-learning. I then applied both value iteration and Q-learning to a toy problem (inspired by Hasting's 1969 paper "The Repair Limit Replacement Method") and compared the two approaches.</p>
-<p><a href="/pdfs/bachelors_thesis.pdf">Link to Bachelor's thesis</a></p>
+<p><a href="https://ndieckow.github.io/blog/pdfs/bachelors_thesis.pdf">Link to Bachelor's thesis</a></p>
 <p>Reading the theoretical part again, I have to pat myself on the shoulder, because it is quite a nice introduction to the basic concepts of reinforcement learning. However, I always skip over the application part, because it's lame and pointless. Funnily, I feel the same about my Master's thesis. Even though I would call myself more of a practical person than a theoretically-minded one. Hmm...</p>
 <p>In hindsight, I wish I had also covered the policy iteration. Maybe, I will extend this thesis in the future, also including advanced topics like deep reinforcement learning (i.e. estimating the state-value or state-action functions by a neural network).</p>
 <h2>Master's Thesis</h2>
 <p>My Master's thesis is titled "Data-driven Approaches for the Maxey-Riley Equation". It is an introduction to the field of system identification, although it focuses mainly on the SINDy (Sparse Identification of Nonlinear Dynamics) algorithm. I apply this to the Maxey-Riley equation -- an ODE that describes the motion of an inertial particle in a turbulent fluid. This ODE contains a tricky integral term which requires any exact solver to store the entire particle trajectory in memory, and also causes the computation time to grow quadratically in the trajectory length. The idea was to see whether one could find an approximation of an ODE as a dynamical system, using SINDy.</p>
-<p><a href="/pdfs/masters_thesis.pdf">Link to Master's thesis</a></p>
+<p><a href="https://ndieckow.github.io/blog/pdfs/masters_thesis.pdf">Link to Master's thesis</a></p>
 <p>I'm happy with the theoretical part. You can tell that I invested a lot of time into researching the literature and I am quite satisfied with my work in that regard. The application part is a bit short, unfortunately. To be quite frank: It was frustrating most of the time, and felt pretty pointless. The MRE isn't even a dynamical system, why should I be able to find a good approximation using one? In my opinion, the topic was flawed from the start, but I was too stupid to realize it back then. The good new is: This shows that I learned something :)</p>
 <p>If I could do it all over again, I would, first of all, pick a different problem. But if that wasn't an option, I would implement the SINDy algorithm myself. I used the existing implementation, PySINDy, which is great, but I never took the time to get into the nitty-gritty of it. I never got my hands dirty. So when I wanted to try things that were not directly supported, but would have been theoretically possible, I simply didn't do them or implemented ugly hacks, which only led to further frustration. Also, had I implemented it myself, it would have felt like more of an achievement; something that I actually did.</p>
 <p>====</p>
